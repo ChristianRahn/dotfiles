@@ -1,1 +1,18 @@
 * My emacs config file <3
+
+* Package Management
+
+#+begin_src emacs-lisp
+
+  (require 'package)
+  (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+
+#+end_src
+
+* Theme Control
+
+#+begin_src emacs-lisp
+
+  (load-theme 'zenburn t)
+
+#+end_src
