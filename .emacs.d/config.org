@@ -16,3 +16,18 @@
   (load-theme 'zenburn t)
 
 #+end_src
+
+* Centaur Tabs
+** trying out tabs to keep track of my buffer
+
+#+begin_src emacs-lisp
+
+(use-package centaur-tabs
+  :demand
+  :config
+  (centaur-tabs-mode t)
+  :bind
+  ("C-<prior>" . centaur-tabs-backward)
+  ("C-<next>" . centaur-tabs-forward))
+
+#+end_src
